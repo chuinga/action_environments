@@ -5,6 +5,7 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: uda-iye-bucket
+
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
@@ -15,4 +16,3 @@ Outputs:
   S3BucketSecureURL:
     Value: !GetAtt UdaBucket.DomainName
     Description: Name of S3 bucket to hold website content
-  
