@@ -4,7 +4,7 @@ Resources:
   UdaBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub 'uda-iye-bucket-${AWS::AccountId}-${AWS::Region}'
+      BucketName: !Sub 'uda-iye-bucket-${AWS::AccountId}-${AWS::Region}-${AWS::StackId}'
 
       WebsiteConfiguration:
         IndexDocument: index.html
